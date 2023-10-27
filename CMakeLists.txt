@@ -11,4 +11,5 @@ add_executable(tests
     tests/gui/test_gui.cpp
 )
 
+target_link_libraries(tests PRIVATE Qt5::Widgets)
 add_custom_target(run_tests COMMAND tests)
